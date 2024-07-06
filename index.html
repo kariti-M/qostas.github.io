@@ -1,0 +1,53 @@
+
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        .rtl-label {
+            direction: rtl;
+            display: block;
+            text-align: right;
+        }
+    </style>
+    <title>القسطاس</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- AdSense Script -->
+    <script data-ad-client="ca-pub-XXXXXXXXXXXXXX" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+</head>
+
+<body>
+    <h1>.السلام عليكم ورحمة الله ، مرحبا بك في تطبيق حساب المصاريف الجماعية وموازنتها بالعدل بين أصحبها</h1>
+    
+    <div>
+        <label class="rtl-label" for="numberOfLists">أدخل عدد الأفراد</label>
+        <input type="number" id="numberOfLists" min="2" placeholder="عدد الأفراد" dir="rtl">
+        <button onclick="initializeLists()">أدخل لقب كل فرد</button>
+    </div>
+
+    <div id="listNameEntries"></div>
+    <button id="createListsButton" onclick="createLists()">افتح مذكرة الحساب</button>
+
+    <div id="listContainers"></div>
+
+    <button id="calculateButton" onclick="calculateResults()">أحسب و وازن</button>
+
+    <div id="results"></div>
+    <div id="balanceInfo" style="margin-top: 20px; font-size: 18px; font-weight: bold;"></div>
+
+    <!-- AdSense Ad Unit -->
+    <div style="margin-top: 20px;">
+        <ins class="adsbygoogle"
+             style="display:block"
+             data-ad-client="ca-pub-XXXXXXXXXXXXXX"
+             data-ad-slot="XXXXXXX"
+             data-ad-format="auto"></ins>
+        <script>
+             (adsbygoogle = window.adsbygoogle || []).push({});
+        </script>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
